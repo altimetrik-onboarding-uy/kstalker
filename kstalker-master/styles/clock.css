@@ -1,0 +1,10 @@
+#clock {
+    color: red;
+    border-radius: 80%;
+    border-color: brown;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 3px;
+}

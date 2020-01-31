@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Onboarding - 1</title>
+</head>
+<body>
+    <h1 id="miHeader" onclick="testHeader()">Click on this text!!!</h1>   
+    <p> Hello </p>
+    <p> SUP </p>
+    <p> HI </p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset=utf-8 />
+    <script src="JSExercisesMix.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/clock.css">
+    <style type="text/css">
+        body {margin: 30px;}
+    </style>   
+    <title>JS Exercises Mix</title>
+</head>
+
+<body>
+    <div>
+    <form class="col-12">
+        Select your favorite Color :
+        <select id="mySelect">
+            <option value="0">First</option>
+            <option value="1">Second</option>
+            <option value="2">Third</option>
+        </select>
+        <input class="btn btn-danger" type="button" onclick="cantItems()" value="Count">
+        <span id="sp" value=""></span>
+        <!-- getTotalItems -->
+    </form>
+    <form action="">
+        <select id="itemSelect">
+            <option value="js">JavaScript</option>
+            <option value="ag">Angular</option>
+            <option value="rt">React</option>
+            
+            </select>
+            <input class="btn btn-info" type="button" onclick="AddNewItem(itemSelect.options[itemSelect.selectedIndex].text, itemSelect.value)" value="Add">           
+    </form>
+
+        <div class="card" style="width: 18rem;">
+            <input type="text" value="" id="clock" readonly>
+            <div class="card-body">
+              <p class="card-text">Return the time every 20 seconds</p>
+            </div>
+        </div>
+
+
+
+
+</body></html>
