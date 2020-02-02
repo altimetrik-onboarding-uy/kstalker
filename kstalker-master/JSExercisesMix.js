@@ -74,23 +74,7 @@ let clockWatch = () => {
 
     let input = document.getElementById("clock");
     input.value = time;
-
-    console.log(time);
-
 }
 
-let myClock = setInterval(clockWatch, 20000);
+let myClock = setInterval(clockWatch, 1000);
 
-
-console.log(" ----------------- THIS - exercise 1 ----------------------- ")
-var target = {
-    values: [1,2,3,4,5],
-    double: function() {
-        this.values.forEach(function() {
-            // Get this to point to object.
-            console.log(this);
-        });
-    }
-};
-
-target.double();
