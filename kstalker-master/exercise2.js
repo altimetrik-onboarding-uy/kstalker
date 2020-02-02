@@ -4,20 +4,21 @@ let testHeader = (id) => {
 
 
 
-console.log(" ----------------- exercise 1 ----------------------- ")
-var target = {
+console.log(" ----------------- THIS - exercise 1 ----------------------- ")
+const target = {
     values: [1,2,3,4,5],
     double: function() {
-        this.values.forEach(element => {
+        this.values.forEach((e) => {
             // Get this to point to object.
-            console.log(element);
+            console.log(e);
         });
     }
 };
 
-this.target.double();
+let ex1 = target.double.bind(target);
+ex1();
 
-console.log(" ----------------- exercise 2 ----------------------- ")
+console.log(" ----------------- This - exercise 2 ----------------------- ")
 
 let qs = () => {
     let x = document.querySelectorAll("p");

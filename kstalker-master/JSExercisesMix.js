@@ -34,18 +34,10 @@ let AddNewItem = (text, value) => {
 }
 
 let findThird = (array) => {
-   // debugger;
+
     let first= array[0];
     let second = 0;
     let third =0;
-    // if(arr != undefined){
-    //     arr.forEach((e) => {
-    //         if(e > may){
-    //             may = e;
-                
-    //         }
-    //     });
-    // }
 
     for (let i = 1; i < array.length; i++) {
         const element = array[i];
@@ -80,17 +72,3 @@ let clockWatch = () => {
 }
 
 let myClock = setInterval(clockWatch, 20000);
-
-
-console.log(" ----------------- THIS - exercise 1 ----------------------- ")
-var target = {
-    values: [1,2,3,4,5],
-    double: function() {
-        this.values.forEach(function() {
-            // Get this to point to object.
-            console.log(this);
-        });
-    }
-};
-
-target.double();
