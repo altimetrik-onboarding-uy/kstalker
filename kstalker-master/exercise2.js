@@ -4,7 +4,7 @@ let testHeader = (id) => {
 
 
 
-console.log(" ----------------- exercise 1 ----------------------- ")
+console.log(" ----------------- THIS - exercise 1 ----------------------- ")
 var target = {
     values: [1,2,3,4,5],
     double: function() {
@@ -15,9 +15,9 @@ var target = {
     }
 };
 
-this.target.double();
+const test = target.double.bind(target);
 
-console.log(" ----------------- exercise 2 ----------------------- ")
+console.log(" ----------------- THIS exercise 2 ----------------------- ")
 
 let qs = () => {
     let x = document.querySelectorAll("p");
