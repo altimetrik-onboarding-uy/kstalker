@@ -2,7 +2,6 @@
 let select = document.getElementById('mySelect');
 
 let cantItems = () => {
-    // debugger;
     let select = document.getElementById('mySelect');
 
     for (let i = 0; i < select.length; i++) {
@@ -72,3 +71,16 @@ let clockWatch = () => {
 }
 
 let myClock = setInterval(clockWatch, 20000);
+
+let subset = (n) => {
+
+    let arr = [];
+    let sNumber = n.toString();
+
+    for(let i = 0; i< sNumber.length; i++){
+        arr.push(sNumber[i]);
+    }
+    console.log(arr);
+}
+
+subset(157);
