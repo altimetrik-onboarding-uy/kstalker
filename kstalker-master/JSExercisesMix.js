@@ -1,7 +1,7 @@
 
 let select = document.getElementById('mySelect');
 
-let cantItems = () => {
+const cantItems = () => {
     let select = document.getElementById('mySelect');
 
     for (let i = 0; i < select.length; i++) {
@@ -10,7 +10,7 @@ let cantItems = () => {
     }
 }
 
-let AddNewItem = (text, value) => {
+const AddNewItem = (text, value) => {
 
     console.log(text, value);
     let arr = [];
@@ -32,7 +32,7 @@ let AddNewItem = (text, value) => {
 
 }
 
-let findThird = (array) => {
+const findThird = (array) => {
 
     let first= array[0];
     let second = 0;
@@ -58,21 +58,18 @@ let findThird = (array) => {
 
 findThird([21,22,6,10,11,99]); //6
 
-let clockWatch = () => {
+const clockWatch = () => {
     let contador = 0;
     let date = new Date();
-    const time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    const time = `${date.getHours()}: ${date.getMinutes()}: ${date.getSeconds()}`;
 
     let input = document.getElementById("clock");
     input.value = time;
-
-    console.log(time);
-
 }
 
-let myClock = setInterval(clockWatch, 20000);
+let myClock = setInterval(clockWatch, 1000);
 
-let subset = (n) => {
+const subset = (n) => {
 
     let arr = [];
     let sNumber = n.toString();
@@ -81,6 +78,7 @@ let subset = (n) => {
         arr.push(sNumber[i]);
     }
     console.log(arr);
+    console.log(`"${arr[0]}" - "${arr[0]}${arr[1]}"`);
 }
 
-subset(157);
+subset(173);

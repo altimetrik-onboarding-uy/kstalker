@@ -1,4 +1,4 @@
-let testHeader = (id) => {
+const testHeader = (id) => {
       document.querySelector('#miHeader').innerHTML = 'This is mi code';
 }
 
@@ -20,7 +20,7 @@ ex1();
 
 console.log(" ----------------- This - exercise 2 ----------------------- ")
 
-let qs = () => {
+const qs = () => {
     let x = document.querySelectorAll("p");
 
     x.forEach(element => {
