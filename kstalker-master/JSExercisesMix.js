@@ -53,13 +53,11 @@ const findThird = (array) => {
         
     }
     console.log(`Third greatest number: ${third}`);
-
 }
 
 findThird([21,22,6,10,11,99]); //6
 
 const clockWatch = () => {
-    let contador = 0;
     let date = new Date();
     const time = `${date.getHours()}: ${date.getMinutes()}: ${date.getSeconds()}`;
 
@@ -72,13 +70,21 @@ let myClock = setInterval(clockWatch, 1000);
 const subset = (n) => {
 
     let arr = [];
+    let arrFinal = [];
     let sNumber = n.toString();
 
     for(let i = 0; i< sNumber.length; i++){
         arr.push(sNumber[i]);
     }
-    console.log(arr);
-    console.log(`"${arr[0]}" - "${arr[0]}${arr[1]}"`);
-}
+    console.log(`Original Array: ${arr}`);
 
+    arrFinal.push(arr[0]);
+    arrFinal.push(arr[0] + arr[1]);
+    arrFinal.push(arr[0] + arr[1] + arr[2]);
+    arrFinal.push(arr[1]);
+    arrFinal.push(arr[1] + arr[2]);
+    arrFinal.push(arr[2]);
+
+    console.log(`Final Array: ${arrFinal}`);
+}
 subset(173);
