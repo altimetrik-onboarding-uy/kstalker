@@ -1,25 +1,26 @@
-let testHeader = (id) => {
+const testHeader = (id) => {
       document.querySelector('#miHeader').innerHTML = 'This is mi code';
 }
 
 
 
 console.log(" ----------------- THIS - exercise 1 ----------------------- ")
-var target = {
+const target = {
     values: [1,2,3,4,5],
     double: function() {
-        this.values.forEach(element => {
+        this.values.forEach((e) => {
             // Get this to point to object.
-            console.log(element);
+            console.log(e);
         });
     }
 };
 
-const test = target.double.bind(target);
+let ex1 = target.double.bind(target);
+ex1();
 
-console.log(" ----------------- THIS exercise 2 ----------------------- ")
+console.log(" ----------------- This - exercise 2 ----------------------- ")
 
-let qs = () => {
+const qs = () => {
     let x = document.querySelectorAll("p");
 
     x.forEach(element => {

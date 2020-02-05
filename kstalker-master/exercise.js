@@ -17,7 +17,6 @@ console.log(smallest(12,-99,1600));
 console.log("------------------------------Sort(bubble)------------------------------");
 //2
 const sort = (arr) => {
-    // let arr = [number1, number2, number3];
     let temp = 0;
     for(let i = 0; i < arr.length; i++){
         for(let j = i; j < arr.length; j++){

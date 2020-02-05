@@ -1,8 +1,7 @@
 
 let select = document.getElementById('mySelect');
 
-let cantItems = () => {
-    // debugger;
+const cantItems = () => {
     let select = document.getElementById('mySelect');
 
     for (let i = 0; i < select.length; i++) {
@@ -11,7 +10,7 @@ let cantItems = () => {
     }
 }
 
-let AddNewItem = (text, value) => {
+const AddNewItem = (text, value) => {
 
     console.log(text, value);
     let arr = [];
@@ -33,19 +32,11 @@ let AddNewItem = (text, value) => {
 
 }
 
-let findThird = (array) => {
-   // debugger;
+const findThird = (array) => {
+
     let first= array[0];
     let second = 0;
     let third =0;
-    // if(arr != undefined){
-    //     arr.forEach((e) => {
-    //         if(e > may){
-    //             may = e;
-                
-    //         }
-    //     });
-    // }
 
     for (let i = 1; i < array.length; i++) {
         const element = array[i];
@@ -62,15 +53,13 @@ let findThird = (array) => {
         
     }
     console.log(`Third greatest number: ${third}`);
-
 }
 
 findThird([21,22,6,10,11,99]); //6
 
-let clockWatch = () => {
-    let contador = 0;
+const clockWatch = () => {
     let date = new Date();
-    const time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    const time = `${date.getHours()}: ${date.getMinutes()}: ${date.getSeconds()}`;
 
     let input = document.getElementById("clock");
     input.value = time;
@@ -78,3 +67,24 @@ let clockWatch = () => {
 
 let myClock = setInterval(clockWatch, 1000);
 
+const subset = (n) => {
+
+    let arr = [];
+    let arrFinal = [];
+    let sNumber = n.toString();
+
+    for(let i = 0; i< sNumber.length; i++){
+        arr.push(sNumber[i]);
+    }
+    console.log(`Original Array: ${arr}`);
+
+    arrFinal.push(arr[0]);
+    arrFinal.push(arr[0] + arr[1]);
+    arrFinal.push(arr[0] + arr[1] + arr[2]);
+    arrFinal.push(arr[1]);
+    arrFinal.push(arr[1] + arr[2]);
+    arrFinal.push(arr[2]);
+
+    console.log(`Final Array: ${arrFinal}`);
+}
+subset(173);
